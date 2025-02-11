@@ -3,15 +3,17 @@
 <meta charset="utf-8">
 <title>DF博客</title>
 </head>
-  <style>
-  .head {
+<style>
+.head {
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-	padding: 100px 0;
-  }
-  
-  .button {
+    padding: 250px 0;
+    flex-direction: column;
+}
+
+.button {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -24,33 +26,60 @@
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
-	border-radius: 25px;
-  }
+    border-radius: 25px;
+}
 
-  .button1 {
+.button1 {
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
-  }
+}
 
-  .button1:hover {
+.button1:hover {
     background-color: #4CAF50;
     color: white;
-  }
-  
-  #background {
-    background-image:url('img/000042.BMP')
-  }
-  </style>
+}
+
+#background {
+    background-image: url('https://api.mtyqx.cn/tapi/random.php');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.basic-div {
+    width: 100px;
+    height: 100px;
+    transition: transform 2s ease-in-out;
+    border-radius: 999px;
+    border: 2px solid #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.basic-div:hover {
+    transform: rotate(360deg);
+}
+
+#touxiang {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+}
+</style>
 <body id="background">
     <div class="head">
-	    <h1 style="color: #4CAF50;">欢迎来到DF博客</h1>
-		    <form name="input" action="https://dfweb.us.kg/"  method="get">
+        <div class="basic-div">
+            <img src="img/1111.webp" id="touxiang">
+        </div>
+        <h1 style="color: #4CAF50;">欢迎来到DF博客</h1>
+        <form name="input" action="https://dfweb.us.kg/" method="get">
             <input type="submit" value="进入博客" class="button button1">
-            </form>	
-	</div>
-	  
-	  <div class="footer"> </div>
+        </form>	
+		<img src="svg/snake-Light.svg" alt="SVG Image">
+    </div>
+    <div class="footer"> </div>
 </body>
-
 </html>
